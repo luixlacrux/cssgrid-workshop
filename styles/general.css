@@ -1,0 +1,46 @@
+body, html {
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+
+.title {
+  font-weight: lighter;
+  text-align: center;
+  padding-bottom: 60px;
+  margin: 0;
+  text-transform: capitalize; 
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; 
+}
+
+.link-btn {
+  display: inline-block;
+  background-color: purple;
+  font-weight: bold;
+  border-radius: 3px;
+  box-shadow: 0 5px 0 rgb(87, 0, 87);
+  color: white;
+  padding: 1em 0;
+  width: 150px;
+  text-align: center;
+  margin: 1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color .3s ease-in-out;
+}
+
+.link-btn:hover {
+  background-color: #6b0060;
+}
