@@ -1,0 +1,50 @@
+.instagram {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 295px));
+  justify-content: center;
+  grid-gap: 28px;
+}
+
+.post {
+  cursor: pointer;
+  position: relative;
+}
+.post:hover .post__overlay {
+  display: flex;
+}
+
+.post__image {
+  margin: 0;
+}
+.post__image img {
+  width: 100%;
+  vertical-align: top;
+}
+
+.post__overlay {
+  background: rgba(0,0,0, .4);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.post__like, .post__comments {
+  width: 80px;
+  margin: 0;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+}
+
+@media screen and (max-width: 768px) {
+  .instagram {
+    grid-gap: 3px;
+  }
+}
