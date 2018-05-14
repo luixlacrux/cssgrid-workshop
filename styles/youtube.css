@@ -1,0 +1,43 @@
+.youtube {
+  display: grid;
+  grid-template-columns: 1fr 330px;
+  grid-gap: 20px;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.playlist {
+  display: grid;
+  grid-gap: 10px;
+}
+.player__content {
+  display: flex;
+  align-items: center;
+}
+.player__content img {
+  width: 100%;
+  object-fit: cover;
+  vertical-align: top;
+}
+.post__content {
+  display: flex;
+}
+.post__image {
+  margin: 0;
+  margin-right: 8px;
+}
+.post__title {
+  margin: 10px 0;
+}
+.post__text {
+  font-size: 14px;
+  color: grey;
+  margin: 5px 0;
+}
+
+@media screen and (max-width: 902px) {
+  .youtube {
+    grid-template-columns: 1fr; 
+  }
+}
